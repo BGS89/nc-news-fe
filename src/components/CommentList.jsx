@@ -20,6 +20,7 @@ function CommentList() {
   }, [article_id]);
 
   if (isLoading) return <p>Loading comments...</p>;
+  if (comments.length < 1) return <p>No comments. Be the first to post!</p>;
 
   return (
     <section>
