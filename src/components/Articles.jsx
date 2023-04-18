@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import fetchArticles from "../api";
+import { fetchArticles } from "../api";
 import ArticleList from "../components/ArticleList";
 
 function Articles() {
