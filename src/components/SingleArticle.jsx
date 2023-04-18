@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchArticleById } from "../api";
 import { useParams } from "react-router-dom";
+import CommentList from "./CommentList";
 
 function SingleArticle() {
   const [article, setArticle] = useState({});
@@ -31,11 +32,7 @@ function SingleArticle() {
         <form>Post Comment Form</form>
       </section>
       <section>
-        <ul>
-          <li>Comment</li>
-          <li>Comment</li>
-          <li>Comment</li>
-        </ul>
+        <CommentList />
       </section>
     </main>
   );
