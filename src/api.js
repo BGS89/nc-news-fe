@@ -5,9 +5,6 @@ const fetchArticles = () => {
     .get("https://nc-news-npk0.onrender.com/api/articles")
     .then((response) => {
       return response.data.articles;
-    })
-    .catch((error) => {
-      console.log(error);
     });
 };
 

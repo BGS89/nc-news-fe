@@ -1,14 +1,23 @@
 import { useEffect, useState } from "react";
 import fetchArticles from "../api";
+import ArticleList from "../components/ArticleList";
 
 function Articles() {
   const [articles, setArticles] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
-    fetchArticles().then((articlesFromApi) => {
-      setArticles(articlesFromApi);
-    });
+    fetchArticles()
+      .then((articlesFromApi) => {
+        setArticles(articlesFromApi);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        return <p>{error.message}</p>;
+      });
   }, []);
 
+  if (isLoading) return <p>Loading articles...</p>;
   return (
     <main>
       <h2>Articles</h2>
@@ -20,20 +29,7 @@ function Articles() {
           <option value="">Option 3</option>
         </select>
       </form>
-      <ul>
-        {articles.map((article) => {
-          return (
-            <li key={article.article_id}>
-              <h3>{article.title}</h3>
-              <img src={article.article_img_url} alt="article"></img>
-              <h4>Author: {article.author}</h4>
-              <p>{article.body}</p>
-              <p>Votes: {article.votes}</p>
-              <p>Comment Count: {article.comment_count}</p>
-            </li>
-          );
-        })}
-      </ul>
+      <ArticleList articles={articles} />
     </main>
   );
 }
