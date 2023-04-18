@@ -30,3 +30,12 @@ li {
 img {
   width: 200px;
 }
+
+.singleArticle form {
+  border: 1px solid black;
+  width: auto;
+}
+
+.singleArticle ul {
+  border: 1px solid black;
+}

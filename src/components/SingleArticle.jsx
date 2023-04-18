@@ -20,11 +20,11 @@ function SingleArticle() {
 
   if (isLoading) return <p>Loading article....</p>;
   return (
-    <main>
+    <main className="singleArticle">
       <section>
         <h2>{article.title}</h2>
         <h3>Author: {article.author}</h3>
-        <img src={article.article_img_url}></img>
+        <img src={article.article_img_url} alt="single article"></img>
         <p>{article.body}</p>
       </section>
       <section>
