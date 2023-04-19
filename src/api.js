@@ -26,4 +26,20 @@ const fetchArticleComments = (article_id) => {
     });
 };
 
-export { fetchArticles, fetchArticleById, fetchArticleComments };
+const patchArticleVotes = (article_id, voteType) => {
+  const voteChange = voteType === "up" ? 1 : -1;
+  return axios
+    .patch(`https://nc-news-npk0.onrender.com/api/articles/${article_id}`, {
+      inc_votes: voteChange,
+    })
+    .then((response) => {
+      return response.data;
+    });
+};
+
+export {
+  fetchArticles,
+  fetchArticleById,
+  fetchArticleComments,
+  patchArticleVotes,
+};
