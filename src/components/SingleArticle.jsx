@@ -70,9 +70,7 @@ function SingleArticle() {
         </p>
         {error ? errorMessage() : null}
       </section>
-      <section>
-        <form>Post Comment Form</form>
-      </section>
+
       <section>
         <CommentList />
       </section>

@@ -33,9 +33,18 @@ const patchArticleVotes = (article_id, voteType) => {
     });
 };
 
+const postArticleComment = (article_id, newComment) => {
+  return ncNewsApi
+    .post(`/articles/${article_id}/comments`, newComment)
+    .then((response) => {
+      return response.data;
+    });
+};
+
 export {
   fetchArticles,
   fetchArticleById,
   fetchArticleComments,
   patchArticleVotes,
+  postArticleComment,
 };

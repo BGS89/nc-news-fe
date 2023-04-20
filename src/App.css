@@ -43,3 +43,8 @@ img {
 .singleArticle ul {
   border: 1px solid black;
 }
+
+.commentForm {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
