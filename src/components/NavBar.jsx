@@ -6,7 +6,6 @@ function NavBar() {
       <Link to="/">
         <button>Home</button>
       </Link>
-      <button>Topics</button>
       <button>Users</button>
     </nav>
   );
