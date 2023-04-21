@@ -1,0 +1,15 @@
+nav {
+  border: 1px solid black;
+  height: fit-content;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.topicSearch {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}

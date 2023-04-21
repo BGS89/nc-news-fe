@@ -2,15 +2,9 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-header {
-  border: 1px solid black;
-  padding: 1rem;
-}
-
-nav {
-  border: 1px solid black;
-  padding: 1rem;
-  margin-top: 1rem;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 main {

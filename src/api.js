@@ -10,6 +10,12 @@ const fetchArticles = () => {
   });
 };
 
+const fetchArticlesByTopic = (topic) => {
+  return ncNewsApi.get(`/articles?topic=${topic}`).then((response) => {
+    return response.data.articles;
+  });
+};
+
 const fetchArticleById = (article_id) => {
   return ncNewsApi.get(`/articles/${article_id}`).then((respose) => {
     return respose.data.article;
@@ -47,4 +53,5 @@ export {
   fetchArticleComments,
   patchArticleVotes,
   postArticleComment,
+  fetchArticlesByTopic,
 };

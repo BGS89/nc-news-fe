@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import TopicSearch from "./TopicSearch";
+import "../component styling/navbar.css";
 
 function NavBar() {
   return (
@@ -6,8 +8,8 @@ function NavBar() {
       <Link to="/">
         <button>Home</button>
       </Link>
-      <button>Topics</button>
       <button>Users</button>
+      <TopicSearch />
     </nav>
   );
 }
