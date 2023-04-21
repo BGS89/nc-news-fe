@@ -1,8 +1,10 @@
+import "../component styling/header.css";
+
 function Header() {
   return (
     <header>
-      <h1>Header</h1>
-      <div>User Icon</div>
+      <h1>NC News</h1>
+      <div id="userIcon">User</div>
     </header>
   );
 }
