@@ -4,7 +4,7 @@ import { fetchArticlesByTopic } from "../api";
 import TopicArticleList from "./TopicArticleList";
 
 function Topic() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const [articlesByTopic, setArticlesByTopic] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
