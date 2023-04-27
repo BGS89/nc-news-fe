@@ -18,9 +18,8 @@ function TopicSearch() {
 
   return (
     <form className="topicSearch" onSubmit={handleFormSubmit}>
-      {/* <label htmlFor="topic">Choose topic: </label> */}
       <select id="topic" value={topic} onChange={handleOptionClick}>
-        <option>Choose topic . . .</option>
+        <option value="">Choose topic . . .</option>
         <option value="football">Football</option>
         <option value="coding">Coding</option>
         <option value="cooking">Cooking</option>
