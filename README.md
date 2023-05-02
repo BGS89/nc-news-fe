@@ -21,7 +21,7 @@ A React app that allows users to interact with news articles from the NC News Ap
 
 ## Tech Stack
 
-**Client:** React, TailwindCSS
+**Client:** React
 
 
 
