@@ -17,14 +17,6 @@ A React app that allows users to interact with news articles from the NC News Ap
 - Comment on individual articles
 
 
-
-
-## Tech Stack
-
-**Client:** React
-
-
-
 ## Installation
 
 Clone this repo locally and cd into new repo
