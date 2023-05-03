@@ -1,5 +1,7 @@
 nav {
-  border: 1px solid black;
+  border: 3px solid #2b2d42;
+  border-radius: 10px;
+  background: #edf2f4;
   height: fit-content;
   padding: 1rem;
   margin-top: 1rem;

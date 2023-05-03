@@ -7,12 +7,13 @@
 
 .articleList li {
   border: 1px solid black;
+  background: white;
   padding: 5px;
   height: 375px;
 }
 
 .articleList li h3:hover {
-  color: red;
+  color: #ef233c;
 }
 
 @media (min-width: 600px) {
