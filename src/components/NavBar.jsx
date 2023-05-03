@@ -8,7 +8,7 @@ function NavBar() {
       <Link to="/">
         <button>Home</button>
       </Link>
-      <button>Users</button>
+
       <TopicSearch />
     </nav>
   );
