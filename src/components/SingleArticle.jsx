@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchArticleById, patchArticleVotes } from "../api";
 import { useParams } from "react-router-dom";
 import CommentList from "./CommentList";
-import "../component styling/article.css";
+import "../component styling/singleArticle.css";
 
 function SingleArticle() {
   const [article, setArticle] = useState({});
@@ -57,7 +57,7 @@ function SingleArticle() {
               handleVote("down");
             }}
           >
-            -
+            <i className="fa-solid fa-thumbs-down"></i>
           </button>{" "}
           {article.votes + localVote}{" "}
           <button
@@ -66,13 +66,13 @@ function SingleArticle() {
               handleVote("up");
             }}
           >
-            +
+            <i className="fa-solid fa-thumbs-up"></i>
           </button>
         </p>
         {error ? errorMessage() : null}
       </section>
 
-      <section>
+      <section className="comments">
         <CommentList />
       </section>
     </main>

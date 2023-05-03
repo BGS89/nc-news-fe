@@ -1,5 +1,7 @@
 body {
   font-family: "Rubik", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 a {
@@ -8,7 +10,9 @@ a {
 }
 
 main {
-  border: 1px solid black;
+  border: 3px solid #2b2d42;
+  border-radius: 10px;
+  background: #edf2f4;
   padding: 1rem;
   margin-top: 1rem;
   display: grid;
@@ -31,9 +35,4 @@ img {
 
 .singleArticle ul {
   border: 1px solid black;
-}
-
-.commentForm {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
