@@ -56,7 +56,7 @@ function SingleArticle() {
               handleVote("down");
             }}
           >
-            -
+            <i class="fa-solid fa-thumbs-down"></i>
           </button>{" "}
           {article.votes + localVote}{" "}
           <button
@@ -65,7 +65,7 @@ function SingleArticle() {
               handleVote("up");
             }}
           >
-            +
+            <i class="fa-solid fa-thumbs-up"></i>
           </button>
         </p>
         {error ? errorMessage() : null}
