@@ -1,7 +1,7 @@
 
 # NC NEWS FRONT END
 
-A React app that allows users to interact with news articles from the NC News Api - https://github.com/BGS89/nc-news
+A fully responsive React app that allows users to interact with news articles from the NC News Api (https://github.com/BGS89/nc-news)
 
 
 
