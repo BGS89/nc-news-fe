@@ -35,7 +35,6 @@ function PostComment({ article_id }) {
 
   return (
     <div>
-      <h3>Post Comment</h3>
       <form className="commentForm" onSubmit={handleSubmit}>
         <label htmlFor="userName">Post as: </label> <br></br>
         <select

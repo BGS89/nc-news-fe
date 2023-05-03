@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchArticleById, patchArticleVotes } from "../api";
 import { useParams } from "react-router-dom";
 import CommentList from "./CommentList";
+import "../component styling/singleArticle.css";
 
 function SingleArticle() {
   const [article, setArticle] = useState({});
@@ -71,7 +72,7 @@ function SingleArticle() {
         {error ? errorMessage() : null}
       </section>
 
-      <section>
+      <section className="comments">
         <CommentList />
       </section>
     </main>
