@@ -2,6 +2,7 @@ import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { fetchArticlesByTopic } from "../api";
 import TopicArticleList from "./TopicArticleList";
+import Loading from "./Loading";
 
 function Topic() {
   const [searchParams] = useSearchParams();
@@ -21,7 +22,14 @@ function Topic() {
       });
   }, [topicQuery]);
 
-  if (isLoading) return <p>Loading articles...</p>;
+  if (isLoading)
+    return (
+      <div className="loading">
+        <Loading />
+        <p>Loading articles...</p>
+      </div>
+    );
+
   return (
     <main>
       <h1>Topic: {topicQuery}</h1>

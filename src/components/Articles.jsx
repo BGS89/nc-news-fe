@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchArticles } from "../api";
 import ArticleList from "../components/ArticleList";
+import Loading from "./Loading";
 
 function Articles() {
   const [articles, setArticles] = useState([]);
@@ -17,7 +18,13 @@ function Articles() {
       });
   }, []);
 
-  if (isLoading) return <p>Loading articles...</p>;
+  if (isLoading)
+    return (
+      <div className="loading">
+        <Loading />
+        <p>Loading articles...</p>
+      </div>
+    );
 
   return (
     <main>

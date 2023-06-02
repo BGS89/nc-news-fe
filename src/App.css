@@ -36,3 +36,18 @@ img {
 .singleArticle ul {
   border: 1px solid black;
 }
+
+.box {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  background: var(--accent);
+  border: 1px dotted red;
+}
+
+.loading {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+}

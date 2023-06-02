@@ -3,6 +3,7 @@ import { fetchArticleById, patchArticleVotes } from "../api";
 import { useParams } from "react-router-dom";
 import CommentList from "./CommentList";
 import "../component styling/singleArticle.css";
+import Loading from "./Loading";
 
 function SingleArticle() {
   const [article, setArticle] = useState({});
@@ -41,7 +42,14 @@ function SingleArticle() {
       });
   }, [article_id]);
 
-  if (isLoading) return <p>Loading article....</p>;
+  if (isLoading)
+    return (
+      <div className="loading">
+        <Loading />
+        <p>Loading article....</p>
+      </div>
+    );
+
   return (
     <main className="singleArticle">
       <section>
