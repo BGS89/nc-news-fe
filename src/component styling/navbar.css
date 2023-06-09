@@ -4,7 +4,7 @@ nav {
   background: #edf2f4;
   height: fit-content;
   padding: 1rem;
-  margin-top: 1rem;
+  margin: 1rem;
   display: flex;
   gap: 1rem;
 }
