@@ -17,3 +17,32 @@ img {
   list-style: none;
   padding: 5px;
 }
+
+.articleList li {
+  border: 1px solid black;
+  padding: 2.5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.articleList img {
+  grid-row-start: span 2;
+  align-self: center;
+}
+
+.articleList a:link {
+  text-decoration: none;
+}
+.articleList a:visited {
+  text-decoration: none;
+}
+.articleList a:hover {
+  text-decoration: none;
+}
+.articleList a:active {
+  text-decoration: none;
+}
+
+.articleList a {
+  color: black;
+}

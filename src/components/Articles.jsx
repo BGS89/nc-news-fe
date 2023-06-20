@@ -28,7 +28,6 @@ function Articles() {
 
   return (
     <main>
-      <h2>Articles</h2>
       <ArticleList articles={articles} />
     </main>
   );
