@@ -1,7 +1,19 @@
+html {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100vw;
+}
+
 header {
   border: 1px solid black;
 }
 
 img {
   width: 150px;
+}
+
+.articleList {
+  border: 1px solid black;
+  list-style: none;
+  padding: 5px;
 }
