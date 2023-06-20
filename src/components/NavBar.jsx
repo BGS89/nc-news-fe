@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import TopicSearch from "./TopicSearch";
-import "../component styling/navbar.css";
 
 function NavBar() {
   return (

@@ -1,4 +1,3 @@
-import "../component styling/articleList.css";
 import ArticleCard from "./ArticleCard";
 
 function ArticleList({ articles }) {
