@@ -19,8 +19,7 @@ function TopicSearch() {
 
   return (
     <>
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#">Navbar</Navbar.Brand>
+      <Navbar expand="lg">
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           onClick={() => setShowOffcanvas(true)} // Open the offcanvas when the toggle button is clicked
@@ -72,28 +71,28 @@ function TopicSearch() {
         <Offcanvas.Body>
           <Form>
             <Button
-              variant="outline-primary"
+              variant="outline"
               onClick={handleHomeClick}
-              className="d-block d-lg-none"
+              className="d-block d-lg-none mb-2"
             >
               Home
             </Button>
             <Button
-              variant="outline-success"
+              variant="outline"
               onClick={() => handleOptionClick("cooking")}
               className="d-block d-lg-none mb-2" // Hide the button on larger screens
             >
               Cooking
             </Button>
             <Button
-              variant="outline-success"
+              variant="outline"
               onClick={() => handleOptionClick("coding")}
               className="d-block d-lg-none mb-2" // Hide the button on larger screens
             >
               Coding
             </Button>
             <Button
-              variant="outline-success"
+              variant="outline"
               onClick={() => handleOptionClick("football")}
               className="d-block d-lg-none mb-2" // Hide the button on larger screens
             >

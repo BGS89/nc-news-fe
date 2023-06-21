@@ -5,15 +5,29 @@ html {
   padding: 10px;
 }
 
+body {
+  /* border: 1px solid black; */
+  padding: 10px;
+}
+
 header {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px;
 }
 
 img {
   width: 150px;
+}
+
+#cover {
+  text-align: center;
+}
+
+.coverimage {
+  width: 340px;
 }
 
 .articleList {
