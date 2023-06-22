@@ -6,7 +6,8 @@ html {
 
 body {
   /* border: 1px solid black; */
-  padding: 20px;
+  padding: 25px;
+  text-align: center;
 }
 
 header {
@@ -60,7 +61,7 @@ img {
   padding: 2.5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 195px;
+  height: 215px;
 }
 
 .articleList img {
@@ -93,4 +94,95 @@ img {
 
 .articleList a {
   color: #023047;
+}
+
+.article-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: underline 2px #fb8500;
+}
+
+.article-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-section img {
+  width: 325px;
+  padding-bottom: 15px;
+}
+
+.article-body {
+  padding-top: 08px;
+}
+
+h3 {
+  font-style: italic;
+}
+
+.votes {
+  padding-bottom: 10px;
+}
+
+.votes button {
+  border: none;
+  background-color: #fb8500;
+  color: #023047;
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
+}
+
+.commentForm {
+  /* border: 1px solid black; */
+  display: grid;
+}
+
+.commentForm button {
+  border: none;
+  background-color: #ffb703;
+  color: #023047;
+  border-radius: 15px;
+}
+.commentForm button:hover {
+  border: none;
+  background-color: #023047;
+  color: #ffb703;
+  border-radius: 15px;
+}
+
+.selecter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selecter label {
+  display: flex;
+  align-items: center;
+}
+
+select {
+  width: 215px;
+  height: 50px;
+}
+
+.comments ul {
+  list-style: none;
+  padding: 5px;
+  /* border: 1px solid #023047; */
+  margin-top: 10px;
+}
+
+.comment-card {
+  border-top: 2px solid #ffb703;
+  border-bottom: 2px solid #ffb703;
+  margin-bottom: 15px;
+  background-color: #023047;
+  color: aliceblue;
+  padding: 5px;
+}
+
+.comment-card h4 {
+  color: #fb8500;
+  font-style: italic;
 }

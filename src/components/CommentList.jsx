@@ -30,7 +30,7 @@ function CommentList() {
   if (comments.length < 1) return <p>No comments. Be the first to post!</p>;
 
   return (
-    <section>
+    <section className="comments">
       <h3>Comments</h3>
       <PostComment article_id={article_id} />
       <ul>

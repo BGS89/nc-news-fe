@@ -53,12 +53,13 @@ function SingleArticle() {
   return (
     <main className="singleArticle">
       <section>
-        <h2>{article.title}</h2>
-        <h3>Author: {article.author}</h3>
-        <img src={article.article_img_url} alt="single article"></img>
-        <p>{article.body}</p>
-        <p>
-          Votes:{" "}
+        <h2 className="article-header">{article.title}</h2>
+        <div className="article-section">
+          <img src={article.article_img_url} alt="single article"></img>
+          <h3>Author: {article.author}</h3>
+          <p className="article-body">{article.body}</p>
+        </div>
+        <div className="votes">
           <button
             disabled={disableDownVote}
             onClick={() => {
@@ -76,7 +77,7 @@ function SingleArticle() {
           >
             <i className="fa-solid fa-thumbs-up"></i>
           </button>
-        </p>
+        </div>
         {error ? errorMessage() : null}
       </section>
 
