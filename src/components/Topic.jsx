@@ -8,23 +8,10 @@ function Topic() {
   const [searchParams] = useSearchParams();
   const [articlesByTopic, setArticlesByTopic] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [coverImagePath, setCoverImagePath] = useState("");
 
   const topicQuery = searchParams.get("topic");
 
   useEffect(() => {
-    setCoverImagePath(() => {
-      switch (topicQuery) {
-        case "cooking":
-          return "../assets/cooking.jpg";
-        case "coding":
-          return "../assets/coding.jpg";
-        case "football":
-          return "../assets/football.jpg";
-        default:
-          return "";
-      }
-    });
     fetchArticlesByTopic(topicQuery)
       .then((articlesByTopicFromApi) => {
         setArticlesByTopic(articlesByTopicFromApi);
@@ -45,8 +32,7 @@ function Topic() {
 
   return (
     <main>
-      <img src={coverImagePath} className="coverimage"></img>
-      <h1>Topic: {topicQuery}</h1>
+      <h1>{topicQuery}</h1>
       <TopicArticleList articlesByTopic={articlesByTopic} />
     </main>
   );

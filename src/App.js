@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div id="cover"></div>
       <Routes>
         <Route path="/" element={<Articles />} />
         <Route path="/articles/:article_id" element={<SingleArticle />}></Route>
