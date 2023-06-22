@@ -32,7 +32,15 @@ function Topic() {
 
   return (
     <main>
-      <h1>{topicQuery}</h1>
+      <section className="page-description">
+        <h1>{topicQuery}</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam non
+          tenetur praesentium voluptate facere fugiat, aut consequatur rerum,
+          magnam nostrum facilis aliquid illum ratione doloremque iste.
+        </p>
+      </section>
+
       <TopicArticleList articlesByTopic={articlesByTopic} />
     </main>
   );
