@@ -1,5 +1,4 @@
 import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/css/bootstrap.css";
 import { Navbar, Nav, Form, Button, Offcanvas } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
