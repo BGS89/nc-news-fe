@@ -67,7 +67,7 @@ img {
   .articleList li {
     grid-template-columns: 1fr;
     padding-right: 10px;
-    height: 350px;
+    height: 370px;
   }
   .articleList img {
     grid-column-start: span 2;
