@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.css";
 import { Navbar, Nav, Form, Button, Offcanvas } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -26,36 +27,31 @@ function TopicSearch() {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Form inline>
+            <div className="d-flex">
+              {" "}
+              {/* Use div with d-flex class to display buttons side by side */}
               <Button
-                variant="outline-success"
+                variant="outline"
                 onClick={() => handleOptionClick("cooking")}
-                className="d-none d-lg-block" // Hide the button on small screens
               >
                 Cooking
               </Button>
               <Button
-                variant="outline-success"
+                variant="outline"
                 onClick={() => handleOptionClick("coding")}
-                className="d-none d-lg-block" // Hide the button on small screens
               >
                 Coding
               </Button>
               <Button
-                variant="outline-success"
+                variant="outline"
                 onClick={() => handleOptionClick("football")}
-                className="d-none d-lg-block" // Hide the button on small screens
               >
                 Football
               </Button>
-              <Button
-                variant="outline-primary"
-                onClick={handleHomeClick}
-                className="d-none d-lg-block" // Hide the button on small screens
-              >
+              <Button variant="outline" onClick={handleHomeClick}>
                 Home
               </Button>
-            </Form>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

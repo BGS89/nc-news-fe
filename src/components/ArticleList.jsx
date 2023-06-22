@@ -4,7 +4,7 @@ function ArticleList({ articles }) {
   return (
     <section>
       <div id="cover">
-        <img src="../assets/news.jpg" alt="" className="coverimage" />
+        {/* <img src="../assets/news.jpg" alt="" className="coverimage" /> */}
       </div>
       <ul className="articleList">
         {articles.map((article) => (
