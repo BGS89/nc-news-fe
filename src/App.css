@@ -125,6 +125,7 @@ h3 {
   background-color: #ffb703;
   color: #023047;
   border-radius: 15px;
+  padding: 10px;
 }
 .commentForm button:hover {
   border: none;
@@ -194,5 +195,22 @@ textarea {
   }
   .selecter label {
     margin-right: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .article-section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  .article-section h3 {
+    grid-row-start: 2;
+  }
+  .article-body {
+    padding: 0px;
+    margin-left: 10px;
+  }
+  .comment-form button {
+    width: 300px;
   }
 }
