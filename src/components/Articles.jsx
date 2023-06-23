@@ -20,7 +20,7 @@ function Articles() {
 
   if (isLoading)
     return (
-      <div className="loading">
+      <div>
         <Loading />
         <p>Loading articles...</p>
       </div>

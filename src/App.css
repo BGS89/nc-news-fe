@@ -70,24 +70,6 @@ img {
   width: 150px;
 }
 
-@media (min-width: 555px) {
-  .articleList img {
-    width: 200px;
-  }
-}
-
-@media (min-width: 635px) {
-  .articleList li {
-    grid-template-columns: 1fr;
-    padding-right: 10px;
-    height: 370px;
-  }
-  .articleList img {
-    grid-column-start: span 2;
-    width: 250px;
-  }
-}
-
 .articleList a:link {
   text-decoration: none;
 }
@@ -185,4 +167,32 @@ select {
 .comment-card h4 {
   color: #fb8500;
   font-style: italic;
+}
+
+textarea {
+  height: 125px;
+}
+
+@media (min-width: 555px) {
+  .articleList img {
+    width: 200px;
+  }
+}
+
+@media (min-width: 635px) {
+  .articleList li {
+    grid-template-columns: 1fr;
+    padding-right: 10px;
+    height: 370px;
+  }
+  .articleList img {
+    grid-column-start: span 2;
+    width: 250px;
+  }
+  .selecter {
+    justify-content: flex-start;
+  }
+  .selecter label {
+    margin-right: 20px;
+  }
 }
