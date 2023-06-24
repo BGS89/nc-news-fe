@@ -36,25 +36,26 @@ function PostComment({ article_id }) {
   return (
     <div>
       <form className="commentForm" onSubmit={handleSubmit}>
-        <label htmlFor="userName">Post as: </label> <br></br>
-        <select
-          id="userName"
-          value={userName}
-          onChange={(event) => {
-            setUserName(event.target.value);
-          }}
-          required
-        >
-          <option value="">Select user...</option>
-          <option value="tickle122">tickle122</option>
-          <option value="grumpy19">grumpy19</option>
-          <option value="happyamy2016">happyamy2016</option>
-          <option value="cooljmessy">cooljmessy</option>
-          <option value="weegembump">weegembump</option>
-          <option value="jessjelly">jessjelly</option>
-        </select>
+        <div className="selecter">
+          <label htmlFor="userName">Post as: </label> <br></br>
+          <select
+            id="userName"
+            value={userName}
+            onChange={(event) => {
+              setUserName(event.target.value);
+            }}
+            required
+          >
+            <option value="">Select user...</option>
+            <option value="tickle122">tickle122</option>
+            <option value="grumpy19">grumpy19</option>
+            <option value="happyamy2016">happyamy2016</option>
+            <option value="cooljmessy">cooljmessy</option>
+            <option value="weegembump">weegembump</option>
+            <option value="jessjelly">jessjelly</option>
+          </select>
+        </div>
         <br></br>
-        <label htmlFor="comment">Comment: </label> <br></br>
         <textarea
           type="text"
           placeholder="Comment here..."

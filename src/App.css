@@ -1,54 +1,228 @@
-body {
-  font-family: "Rubik", sans-serif;
+html {
   display: grid;
   grid-template-columns: 1fr;
   width: 100vw;
+  overflow-y: scroll;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+body {
+  /* border: 1px solid black; */
+  padding: 25px;
+  text-align: center;
 }
 
-main {
-  border: 3px solid #2b2d42;
-  border-radius: 10px;
-  background: #edf2f4;
-  padding: 1rem;
-  margin: 1rem;
-  display: grid;
-  justify-items: center;
-}
-
-ul {
-  list-style: none;
+header {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px;
 }
 
-li {
-  border: 1px solid black;
-  padding: 5px;
+.box {
+  border: 2px dotted #fb8500;
+  height: 50px;
+  width: 50px;
+  text-align: center;
 }
 
 img {
-  width: 200px;
+  width: 150px;
 }
 
-.singleArticle ul {
-  border: 1px solid black;
+#cover {
+  background: url(../public/assets/news.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px;
 }
 
-.box {
-  background-color: blue;
-  width: 100px;
-  height: 100px;
-  background: var(--accent);
-  border: 1px dotted red;
+.coverimage {
+  width: 300px;
 }
 
-.loading {
+.page-description {
+  padding: 10px;
+  background-color: #023047;
+  margin-top: 15px;
+  color: aliceblue;
+}
+
+.page-description h1 {
+  color: #ffb703;
+}
+
+.articleList {
+  /* border: 1px solid black; */
+  list-style: none;
+  padding: 5px;
+  margin-top: 15px;
   display: grid;
-  justify-content: center;
-  text-align: center;
-  padding-top: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px;
+}
+
+.articleList li {
+  border: 1px solid #023047;
+  padding: 2.5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 255px;
+}
+
+.articleList li h3 {
+  text-decoration: underline 2px #fb8500;
+}
+
+.articleList img {
+  grid-row-start: span 2;
+  align-self: baseline;
+  width: 150px;
+}
+
+.articleList a:link {
+  text-decoration: none;
+}
+
+.articleList a {
+  color: #023047;
+}
+
+.article-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: underline 2px #fb8500;
+}
+
+.article-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-section img {
+  width: 325px;
+  padding-bottom: 15px;
+}
+
+.article-body {
+  padding-top: 08px;
+}
+
+h3 {
+  font-style: italic;
+}
+
+.votes {
+  padding-bottom: 10px;
+}
+
+.votes button {
+  border: none;
+  background-color: #fb8500;
+  color: #023047;
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
+}
+
+.commentForm {
+  /* border: 1px solid black; */
+  display: grid;
+}
+
+.commentForm button {
+  border: none;
+  background-color: #ffb703;
+  color: #023047;
+  border-radius: 15px;
+  padding: 10px;
+}
+.commentForm button:hover {
+  border: none;
+  background-color: #023047;
+  color: #ffb703;
+  border-radius: 15px;
+}
+
+.selecter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selecter label {
+  display: flex;
+  align-items: center;
+}
+
+select {
+  width: 215px;
+  height: 50px;
+}
+
+.comments ul {
+  list-style: none;
+  padding: 5px;
+  /* border: 1px solid #023047; */
+  margin-top: 10px;
+}
+
+.comment-card {
+  border-top: 2px solid #ffb703;
+  border-bottom: 2px solid #ffb703;
+  margin-bottom: 15px;
+  background-color: #023047;
+  color: aliceblue;
+  padding: 5px;
+}
+
+.comment-card h4 {
+  color: #fb8500;
+  font-style: italic;
+}
+
+textarea {
+  height: 125px;
+}
+
+@media (min-width: 555px) {
+  .articleList img {
+    width: 200px;
+  }
+}
+
+@media (min-width: 635px) {
+  .articleList li {
+    grid-template-columns: 1fr;
+    padding-right: 10px;
+    height: 370px;
+  }
+  .articleList img {
+    grid-column-start: span 2;
+    width: 250px;
+  }
+  .selecter {
+    justify-content: flex-start;
+  }
+  .selecter label {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .article-section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  .article-section h3 {
+    grid-row-start: 2;
+  }
+  .article-body {
+    padding: 0px;
+    margin-left: 10px;
+  }
+  .comment-form button {
+    width: 300px;
+  }
 }
