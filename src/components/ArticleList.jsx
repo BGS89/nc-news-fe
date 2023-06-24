@@ -6,13 +6,16 @@ function ArticleList({ articles }) {
       <section className="page-description">
         <h1>Welcome to NC News</h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam non
-          tenetur praesentium voluptate facere fugiat, aut consequatur rerum,
-          magnam nostrum facilis aliquid illum ratione doloremque iste. Quam,
-          quis temporibus! Eaque! Mollitia et voluptate error, libero ad nisi
-          neque ipsam sequi officiis unde rem officia non eos doloribus. Culpa
-          doloribus doloremque impedit a! Aut autem voluptatum accusamus veniam,
-          aliquam vel cum.
+          Welcome to NC News, the ultimate platform for engaging discussions and
+          thought-provoking articles. Our full stack application is designed to
+          emulate the popular Reddit-style experience, allowing users to delve
+          into a wide range of topics, read captivating articles, and actively
+          participate in the community through comments and reactions. Discover
+          diverse perspectives, share your thoughts, and engage in lively
+          debates. With the ability to like and dislike articles, you can shape
+          the narrative and highlight the most intriguing content. Join our
+          vibrant community, explore the vast collection of articles, and let
+          your voice be heard on NC News!
         </p>
       </section>
       <ul className="articleList">
