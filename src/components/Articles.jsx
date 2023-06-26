@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchArticles } from "../api";
 import ArticleList from "../components/ArticleList";
-
 import { motion } from "framer-motion";
 
 function Articles() {
