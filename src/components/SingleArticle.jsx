@@ -45,7 +45,6 @@ function SingleArticle() {
   if (isLoading) {
     return (
       <div className="loading">
-        {/* <Loading /> */}
         <p>Loading article....</p>
       </div>
     );

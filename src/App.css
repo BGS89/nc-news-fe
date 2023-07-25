@@ -1,29 +1,17 @@
-html {
+body {
   display: grid;
   grid-template-columns: 1fr;
   width: 100vw;
   overflow-y: scroll;
-}
-
-body {
-  /* border: 1px solid black; */
   padding: 25px;
   text-align: center;
 }
 
 header {
-  /* border: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-}
-
-.box {
-  border: 2px dotted #fb8500;
-  height: 50px;
-  width: 50px;
-  text-align: center;
 }
 
 img {
@@ -39,10 +27,6 @@ img {
   height: 300px;
 }
 
-.coverimage {
-  width: 300px;
-}
-
 .page-description {
   padding: 10px;
   background-color: #023047;
@@ -55,7 +39,6 @@ img {
 }
 
 .articleList {
-  /* border: 1px solid black; */
   list-style: none;
   padding: 5px;
   margin-top: 15px;
@@ -128,7 +111,6 @@ h3 {
 }
 
 .commentForm {
-  /* border: 1px solid black; */
   display: grid;
 }
 
@@ -164,7 +146,6 @@ select {
 .comments ul {
   list-style: none;
   padding: 5px;
-  /* border: 1px solid #023047; */
   margin-top: 10px;
 }
 

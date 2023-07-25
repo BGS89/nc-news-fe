@@ -18,7 +18,7 @@ function Topic() {
         setIsLoading(false);
       })
       .catch((error) => {
-        return <p>{error.message}</p>;
+        console.log(error);
       });
   }, [topicQuery]);
 
