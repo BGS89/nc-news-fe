@@ -3,10 +3,10 @@ import { Navbar, Nav, Button, Offcanvas } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-function TopicSearch() {
+function Navigation() {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
-  const navigate = useNavigate();
   const [isMobileView, setIsMobileView] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleResize = () => {
@@ -22,12 +22,12 @@ function TopicSearch() {
 
   const handleOptionClick = (topic) => {
     navigate(`/articles?topic=${topic}`);
-    setShowOffcanvas(false); // Close the offcanvas when an option is clicked
+    setShowOffcanvas(false);
   };
 
   const handleHomeClick = () => {
     navigate("/");
-    setShowOffcanvas(false); // Close the offcanvas when the Home button is clicked
+    setShowOffcanvas(false);
   };
 
   const renderButtons = () => {
@@ -54,7 +54,7 @@ function TopicSearch() {
       <Navbar expand="lg">
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
-          onClick={() => setShowOffcanvas(!showOffcanvas)} // Toggle the offcanvas when the menu button is clicked
+          onClick={() => setShowOffcanvas(!showOffcanvas)}
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">{isMobileView ? null : renderButtons()}</Nav>
@@ -65,14 +65,13 @@ function TopicSearch() {
           show={showOffcanvas}
           onHide={() => setShowOffcanvas(false)}
           placement="end"
-          style={{ width: "50%" }} // Set the offcanvas width to 100%
+          style={{ width: "50%" }}
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title>Menu</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="flex-column">{renderButtons()}</Nav>{" "}
-            {/* Render the buttons vertically */}
           </Offcanvas.Body>
         </Offcanvas>
       )}
@@ -80,4 +79,4 @@ function TopicSearch() {
   );
 }
 
-export default TopicSearch;
+export default Navigation;
